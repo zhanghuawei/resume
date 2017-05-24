@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>易快购网-欢迎访问！本网主要经营苹果iphone5s、iphone5c、iphone4s、ihone4、ipad4、ipad mini、iMac、Mac Book Air、Mac Book Pro/retina等全系列产品！均为正品行货！全网最低，免费送货！</title>
+    <link href="images1/biao.jpg" type="image/x-icon" rel="shortcut icon"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+        }
+        #head{
+            width: 1024px;
+            margin: 0 auto;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+        }
+        #head p{
+            margin: 0 auto;
+            padding: 0 10px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: #F7F7F7;
+        }
+        .head_spanLeft{
+            float: left;
+            font-size: 12px;
+        }
+        .head_spanRight{
+            float: right;
+            font-size: 12px;
+        }
+        .head_spanRight a{
+            text-decoration: none;
+        }/*标头*/
+        .head_inner{
+            width: 1024px;
+            height: 80px;
+            margin: 0 auto;
+            padding:  0 50px ;
+            box-sizing: border-box;
+        }
+        .head_inner ul{
+            list-style: none;
+        }
+        .head_inner ul li{
+            float: left;
+            height: 80px;
+            line-height: 80px;
+            width: 230px;
+            text-align: center;
+            color: white;
+        }
+        .head_inner ul li:last-child{
+            background: url("img/kefu.jpg") no-repeat 0 center;
+            float: right;
+        }
+        .head_inner ul li:nth-child(2){
+           width: 382px;
+        }
+        .head_inner ul li:nth-child(3){
+            width:80px ;
+        }
+        .input{
+            width: 300px;
+            height: 40px;
+            border: 2px solid #cd0000;
+            outline: none;
+            font-size: 18px;
+            box-sizing: border-box;
+            position: relative;
+            left: 18px;
+            bottom: -15px;
+        }
+        .input_a{
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            background: #cd260e;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            vertical-align: center;
+            position: relative;
+            left: 18px;
+            top: 14px;
+        }
+        .head_innerList{
+            width: 1024px;
+            height: 45px;
+            line-height: 45px;
+            margin: 5px auto;background: #cd260e;
+            border-radius: 3px;
+            box-shadow: 0 5px  3px 0 #bbbbbb ;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .head_innerList ul{
+            list-style: none;margin: 0 57px;
+        }
+        .head_innerList ul li{
+            width: 110px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            float: left;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .head_innerList ul li a{
+            width: 100%;
+            height: 100%;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .head_innerList ul li:hover{
+            text-decoration: none;
+            background: #970709;
+        }
+        /*头部*/
+        #middle{
+            width: 1020px;
+            height: 450px;
+            margin: 10px auto;
+            position: relative;
+            overflow: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+
+        }
+        #middle .middle_a{
+            width: 5100px;
+            height: 450px;
+            left: 0;
+            top:0;
+            margin: 10px auto;
+            position: absolute;
+            overflow: hidden;
+        }
+        #middle .middle_a img{
+            border: none;
+            width: 1020px;
+            height: 450px;
+            float: left;
+        }
+        #middle ul{
+            list-style: none;position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+        #middle ul li{
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            background: #fff;
+            border-radius: 50%;
+            float: left;
+            font-size: 12px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        #middle ul li.bg{
+            background: #cd260e;
+        }
+        #middle a{
+            position: absolute;
+            width: 28px;
+            height: 45px;
+            top:40%;
+            background: url("img/pre.png") no-repeat 0 0 #fff ;
+            opacity: 0.1;
+            filter: alpha(opacity=10);
+         }
+        #middle a:hover{
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+        #middle a.btnLeft{
+            left: 20px;
+        }
+        #middle a.btnRight{
+            right: 20px;
+            background-position:-50px 0  ;
+        }
+        /*底部*/
+        #bottom{
+            width: 1024px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #bottom p {
+            font-size: 13px;
+            color:#666;
+        }
+        #bottom p a{
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="head">
+    <p><span class="head_spanLeft">你好，欢迎访问易快购网！</span><span class="head_spanRight">加入收藏，<a href="javascript:;">联系我们</a></span></p>
+    <div class="head_inner">
+    <ul>
+        <li><a href="javascript:;"><img src="img/logo.jpg" alt=""></a></li>
+        <li style=""><input type="text" name="搜索" class="input"><a href="javascript:;" class="input_a">搜索</a></li>
+        <li style=""> </li>
+        <li></li>
+    </ul>
+    </div>
+    <div class="head_innerList">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="javascript:;">Mac</a></li>
+                <li><a href="javascript:;">iphone</a></li>
+                <li><a href="javascript:;">ipad</a></li>
+                <li><a href="javascript:;">ipod</a></li>
+                <li><a href="javascript:;">配件</a></li>
+                <li><a href="javascript:;">技术支持</a></li>
+            </ul>
+    </div>
+</div>
+<div id="middle">
+    <div class="middle_a" id="middle_a">
+        <img src="img/macbook.jpg" alt="">
+        <img src="img/iphone.jpg" alt="">
+        <img src="img/ipad.jpg" alt="">
+        <img src="img/wathc.jpg" alt="">
+        <img src="img/macbook.jpg" alt="">
+    </div>
+    <ul >
+        <li class="bg">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <a href="javascript:;" class="btnLeft" id="btnLeft"></a>
+    <a href="javascript:;" class="btnRight" id="btnRight"></a>
+</div>
+<div id="bottom">
+    <p style="color:#33F">隐私保护 　版权所有　京ICP备13044055号</p>
+    <p ><a href="javascript:;" style="color:#666; margin-left:5px ">关于我们</a> <a href="javascript:;" style="color:#666; margin-left:5px">我们服务</a>　客服热线：010-57212781　邮箱ekuaigou@sina.com</p>
+
+</div>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8" src="js/animate.js"></script>
+<script type="text/javascript" charset="UTF-8" >
+    ~function () {
+        var step = 0, autoTimer = null, interval = 2000;
+        var oMiddle=document.getElementById("middle");
+        var oLis=oMiddle.getElementsByTagName("li");
+        var oMiddle_a=document.getElementById("middle_a");
+        var oBtnLeft=document.getElementById("btnLeft");
+        var oBtnRight=document.getElementById("btnRight");
+
+        /*焦点切换*/
+        function changeTip() {
+            var tempStep = step;
+            tempStep >= oLis.length ? tempStep = 0 : null;
+            for (var i = 0; i < oLis.length; i++) {
+                oLis[i].className = i === tempStep ? "bg" : null;
+            }
+        }
+        /*焦点点击*/
+        tipMove();
+        function tipMove() {
+            for(var i=0;i<oLis.length;i++){
+                oLis[i].index=i;
+                oLis[i].onclick=function () {
+                    window.clearInterval(autoTimer);
+                    step=this.index;
+                    var a=oMiddle_a.style.left= (-step * 1020)+"px";
+                    changeTip();
+                    autoTimer = window.setInterval(autoMove, interval);
+                }
+            }
+
+
+
+
+        }
+        autoTimer = window.setInterval(autoMove, interval);
+        function autoMove() {
+            step++;
+            if (step > 4) {
+                step = 1;
+                oMiddle_a.style.left = 0;
+            }
+            animate(oMiddle_a, {left: -step * 1020}, 1000,3);
+            changeTip();
+        }
+
+        oBtnLeft.onclick=function () {
+            step--;
+            if(step<0){
+                step=3;
+                oMiddle_a.style.left=-4080+"px";
+
+            }
+            animate(oMiddle_a, {left: -step * 1020}, 1000,3);
+            changeTip();
+        };
+
+        oBtnRight.onclick=autoMove;
+
+        oMiddle_a.onmouseenter=function () {
+            window.clearInterval(autoTimer);
+        };
+
+        oMiddle_a.onmouseleave=function () {
+            autoTimer = window.setInterval(autoMove, interval);
+        }
+
+    }();
+
+console.log("582532181@qq.com")
+</script>

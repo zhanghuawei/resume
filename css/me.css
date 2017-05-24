@@ -1,0 +1,44 @@
+.header{position: fixed;height: 55px;line-height: 55px; top: 10px;left: 0;right:0;margin: 0 auto;z-index: 1000;}
+.logo{ float: left;width: 55px; height: 55px;font-size: 0px; margin-left: 8%;transition: all 1s linear}
+.nav{position: relative; float: right;margin-right: 5%}
+.nav ul li{display: inline-block;font-weight: 600; cursor: pointer;width: 80px;height: 55px;text-align: center}
+.nav ul li a{color:#ff9700;}
+.nav ul li.bg{border-bottom: 2px solid #ff9700;}
+.nav ul li:last-child{display: none;transition: all .4s linear}
+.nav ul li:last-child img{ width: 40%;}
+.nav-hide{position: absolute;display: none; top:55px;left:0;right: 0;margin: 0 auto;}
+.nav-hide ul li{width: 100%;height: 35px;line-height: 35px; text-align: center;background: #333;border-bottom: 1px solid #fff}
+.nav-hide ul li a{color:#fff}
+.me-bg{position: relative; width: 100%;height: 100%;}
+
+.me-list{position: absolute;width: 90%;height: 30%; top: 40%;left: 0;right: 0;margin: 0 auto;}
+.me-list div{position: relative; float: left;width: 30%;height: 30%;text-align: center;transition: all .1s linear}
+
+.me-list div:nth-child(2){margin: 0 5% 0}
+.me-list div h2{position: absolute;color:#ff9700; top: 40%;left: 0;right: 0;margin: 0 auto;background: rgba(9,9,9,.4)}
+
+.me-list-hide{display: none; top:15%;overflow-y: auto;overflow-x: hidden; border-radius: 5px; height: 80% !important;padding: 0 10%; background: #fff}
+.me-list-hide h5{position: fixed;right: 10%; cursor: pointer;width: 80px;text-align: center; float: right;height: 60px;  line-height: 60px;z-index: 100}
+.me-list-hide p{font-size: 14px;}
+.me-list-hide div{vertical-align: top; border: 1px dashed #ff9700;margin: 0 1% 0}
+
+@media screen and (max-width: 750px) {
+
+    .me-list{top:15%; padding: 0 10%}
+    .me-list div{width: 100%;height: 130px; margin: 0 auto 5%;}
+    .me-list div:nth-child(2){margin: 0 auto 5%;}
+    .me-list div img{width: 90%}
+    .me-list div h2{width: 90%}
+    .me-list-hide h5{right: 5%}
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav ul li{display: none}
+    .nav ul li:last-child{display:block;padding-top: 15px;}
+    .logo{margin-left: 5%}
+    .nav{margin-right: 0%}
+    .me-list div img{width: 100%}
+    .me-list div h2{width: 100%}
+}
